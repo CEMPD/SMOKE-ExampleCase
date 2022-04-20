@@ -1,8 +1,8 @@
 # SMOKE-TestCase
-# The files in this distribution serve as a test for the SMOKE installation 
-# The structure resembles the 2017 NEI release with modifications to run for a single month
+## The files in this distribution serve as a test for the SMOKE installation 
+## The structure resembles the 2017 NEI release with modifications to run for a single month
 
-# Users should be able to follow the next steps:
+## Users should be able to follow the next steps:
 1. Download and install the TestCase data from (link to be provided) or
    Link to an existing 2017NEI download
 2. Get a copy of the SMOKE-TestCase scripts and place them in the structure
