@@ -1,0 +1,29 @@
+#
+# NOTES TO CONSIDER WHEN BUILDING THIS DATASET:
+#   1) If running the Temporal program for multiple dates, you can either turn
+#      off all or none of the dates per run.  To do this, make sure that the
+#      date range given includes the FIRST date of each Temporal program run.
+#   2) Entries do not need to be here for a "Yes", since the defaults in the
+#      main run script are assumed to be "Yes".  However, including "Y" entries
+#      will not hurt anything.
+#   3) Sector-specific "Y" entries will override Sector = "all" "N" entries 
+#      for the same grid, program, part, and date range.
+#   4) (Added by C. Allen) If you set Temporal to Y, then this induces a bug
+#      where the Temporal files are deleted after they are created. To avoid,
+#      never set Temporal to Y to override an "all=N" setting (only use N settings).
+#   5) (Added by C. Allen) The domain totals program ("domain") doesn't work for
+#      files larger than 2 GB. Therefore, it is turned off for 12EUS1.
+#
+# Column labels:
+# Sector, Grid, Environment Variable Name, Part, Start Date, End Date, Value
+all   , 36US1, smkreport, PART2, 0, 0, N
+all   , 12US2, smkreport, PART2, 0, 0, N
+all   , 12US1, smkreport, PART2, 0, 0, N
+ptfire   , 12US1, smkreport, PART1, 0, 0, N
+ptfire_othna   , 12US1, smkreport, PART1, 0, 0, N
+ptagfire   , 12US1, smkreport, PART1, 0, 0, N
+ptagfire3D   , 12US2, smkreport, PART1, 0, 0, N
+ptfire3D   , 12US2, smkreport, PART1, 0, 0, N
+ptfire_othna3D   , 12US2, smkreport, PART1, 0, 0, N
+#mrggrid, 12US1, domain, PART4, 0, 0, N
+beis, 12US1, normbeis3, PART1, 0, 0, N
