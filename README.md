@@ -1,6 +1,7 @@
 # SMOKE-TestCase
 
-The files in this repository serve as a quick test for the SMOKE installation 
+The files in this repository serve as a quick test for the SMOKE installation from https://github.com/CEMPD/SMOKE   
+
 The structure relies on:
 1. Having successfully installed SMOKE and its prerequisites in your system according to this guide ()
 2. Choose and make a test location in your system 
