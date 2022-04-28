@@ -4,8 +4,7 @@ The files in this repository serve as a quick test for the SMOKE installation fr
 
 The structure relies on:
 1. Having successfully installed SMOKE and its prerequisites in your system according to this guide (link to be provided)
-2. Choose and make a test location in your system 
-i.e.
+2. Choose and make a test location in your system, i.e.  
 ```
 cd someplaceinyoursystem/
 mkdir /path_to_your_SMOKE_test_folder/
