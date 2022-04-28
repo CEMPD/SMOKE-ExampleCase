@@ -23,7 +23,7 @@ vim run_settings.txt
 Modify the following envirnonment variables in file pointing to the correct location for your system:
 
 INSTALL_DIR    : Root directory (i.e. someplaceinyoursystem/ under which your keep your SMOKE-TestCase)  
-MET_ROOT       : Full path of MCIP (meteorology) files (in this case MCIP output for July 2017 12US1 domain is included in the input dataset, so someplaceinyoursystem/mcip)  
+MET_ROOT       : Full path of MCIP (meteorology) files (in this case MCIP output for July 2017 12US1 domain is included in the input dataset, so for our TestCase someplaceinyoursystem/mcip)  
 MET_ROOT_3D    : Path to the full layered METCRO3D files (same as above, if you are using the TestCase inputs)  
 SMOKE_LOCATION : Path to the directory with the SMOKE executables  
 IOAPI_LOCATION : Path to the directory I/O API utilities  
@@ -34,7 +34,7 @@ cd nonpoint
 ./Annual_np_oilgas_12US1_2017gb_17j_TestCase.csh >& np_oilgas_TestCase.log
 ```
 You should be able to check the log file and and verify that the script and programs finished running successfully.
-The structure within /path_to_your_SMOKE_test_folder/SMOKE-TestCase/ should have been expanded and you can evaluate your output files for this sector.
+The structure within /path_to_your_SMOKE_test_folder/SMOKE-TestCase/ should have been expanded and you can evaluate your output files for this sector.  
 
 6. Navigate in the scripts directory for the point sector and run the onetime script:
 ```
@@ -49,6 +49,6 @@ Run the daily script:
 Verify the script and programs finished running successfully for the daily script.
 You can evaluate your output files for this sector as well.
 
-7. Congratulations - If there are no errors and no differences in the output files for the above sectors your SMOKE setup is working! 
+7. If there are no errors and no differences in the output files for the above sectors your SMOKE setup is working! 
 
 
