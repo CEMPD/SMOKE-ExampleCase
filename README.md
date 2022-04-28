@@ -22,11 +22,11 @@ vim run_settings.txt
 ```
 Modify the following envirnonment variables in file pointing to the correct location for your system:
 
-INSTALL_DIR    : Root directory (i.e. someplaceinyoursystem/ under which your keep your SMOKE-TestCase)
-MET_ROOT       : Full path of MCIP (meteorology) files (in this case MCIP output for July 2017 12US1 domain is included in the input dataset, so someplaceinyoursystem/mcip)
-MET_ROOT_3D    : Path to the full layered METCRO3D files (same as above, if you are using the TestCase inputs)
-SMOKE_LOCATION : Path to the directory with the SMOKE executables
-IOAPI_LOCATION : Path to the directory I/O API utilities
+INSTALL_DIR    : Root directory (i.e. someplaceinyoursystem/ under which your keep your SMOKE-TestCase)  
+MET_ROOT       : Full path of MCIP (meteorology) files (in this case MCIP output for July 2017 12US1 domain is included in the input dataset, so someplaceinyoursystem/mcip)  
+MET_ROOT_3D    : Path to the full layered METCRO3D files (same as above, if you are using the TestCase inputs)  
+SMOKE_LOCATION : Path to the directory with the SMOKE executables  
+IOAPI_LOCATION : Path to the directory I/O API utilities  
 
 5. Navigate in the scripts directory for the nonpoint sector and run the onetime script:
 ```
