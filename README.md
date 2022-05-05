@@ -3,7 +3,8 @@
 The files in this repository serve as a quick test for the SMOKE installation from https://github.com/CEMPD/SMOKE   
 
 The structure relies on:
-1. Having successfully installed SMOKE and its prerequisites in your system according to this guide (link to be provided)
+1. Having successfully installed SMOKE and its prerequisites in your system according to the guide above:
+
 2. Choose and make a test location in your system, i.e.  
 ```
 cd someplaceinyoursystem/
@@ -14,7 +15,8 @@ and get a copy of the SMOKE-TestCase scripts
 ```
 git clone -b main https://github.com/CEMPD/SMOKE-TestCase.git SMOKE-TestCase
 ```
-3. Download the test case input data (link and commands to be provided)
+3. Download the test case input data from here:  
+https://drive.google.com/file/d/15QQTs7nILXk613hJlZTGbDeaZLqnaYuP/view?usp=sharing
 4. Move in the SMOKE-TestCase scripts folder and open run_settings.txt with an editor 
 ```
 cd SMOKE-TestCase/scripts/
