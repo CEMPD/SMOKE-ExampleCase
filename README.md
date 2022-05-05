@@ -19,7 +19,7 @@ git clone -b main https://github.com/CEMPD/SMOKE-TestCase.git SMOKE-TestCase
 https://drive.google.com/file/d/15QQTs7nILXk613hJlZTGbDeaZLqnaYuP/view?usp=sharing  
 and place them in your test location.  
 
-4. Move in the SMOKE-TestCase scripts folder and open run_settings.txt with an editor 
+4. Navigate to the SMOKE-TestCase scripts folder and open run_settings.txt with an editor of your choice 
 ```
 cd SMOKE-TestCase/scripts/
 vim run_settings.txt
