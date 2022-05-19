@@ -17,7 +17,17 @@ git clone -b main https://github.com/CEMPD/SMOKE-TestCase.git SMOKE-TestCase
 ```
 3. Download the test case input data from here 
 https://drive.google.com/file/d/15QQTs7nILXk613hJlZTGbDeaZLqnaYuP/view?usp=sharing  
-and place them in your test location.  
+
+Place them in your test location and decompress the archive:
+```
+tar -xvf SMOKE-TestCase-inputs-outputs.tar.gz
+```
+For testing the biogenic sector download the biogenic package
+
+Place them in your test location and decompress the archive:
+```
+tar -xvf SMOKE-TestCase-biogenics-inputs-outputs.tar.gz
+```
 
 4. Navigate to the SMOKE-TestCase scripts folder and open run_settings.txt with an editor of your choice 
 ```
