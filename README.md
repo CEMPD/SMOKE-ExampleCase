@@ -16,7 +16,9 @@ and get a copy of the SMOKE-TestCase scripts
 ```
 git clone -b main https://github.com/CEMPD/SMOKE-TestCase.git SMOKE-TestCase
 ```
-3. Download the Test Case input & output data package from here:   
+3. Download the Test Case input & output data package from here:  
+https://drive.google.com/drive/folders/18hiiGSlFQ6gWtXmEdkemBwoyUly1dJEV?usp=sharing
+
 https://drive.google.com/file/d/1brhb43RMv5GiYcucRyeYG56GuwVBQ2QV/view?usp=sharing
 
 Place them in your test location and decompress the archive:
