@@ -23,7 +23,7 @@ Place them in your test location and decompress the archive:
 ```
 tar -xvf SMOKE-TestCase-inputs-outputs.tar.gz
 ```
-For testing the biogenic sector download the biogenic package from here:  
+4. For testing the biogenic sector download the biogenic package from here:  
 https://drive.google.com/file/d/11lSuFbFH1Piy5q-Qq5gkgm2Kx57wGpJJ/view?usp=sharing
 
 Place them in your test location and decompress the archive:
@@ -31,7 +31,7 @@ Place them in your test location and decompress the archive:
 tar -xvf SMOKE-TestCase-biogenics-inputs-outputs.tar.gz
 ```
 
-4. Navigate to the SMOKE-TestCase scripts folder and open run_settings.txt with an editor of your choice 
+5. Navigate to the SMOKE-TestCase scripts folder and open run_settings.txt with an editor of your choice 
 ```
 cd SMOKE-TestCase/scripts/
 vim run_settings.txt
@@ -44,7 +44,7 @@ MET_ROOT_3D    : Path to the full layered METCRO3D files (same as above, if you 
 SMOKE_LOCATION : Path to the directory with the SMOKE executables  
 IOAPI_LOCATION : Path to the directory I/O API utilities  
 
-5. Navigate in the scripts directory for the nonpoint sector and run the onetime script:
+6. Navigate in the scripts directory for the nonpoint sector and run the onetime script:
 ```
 cd nonpoint
 ./Annual_np_oilgas_12US1_2017gb_17j_TestCase.csh >& np_oilgas_TestCase.log
@@ -52,7 +52,7 @@ cd nonpoint
 You should be able to check the log file and and verify that the script and programs finished running successfully.
 The structure within /path_to_your_SMOKE_test_folder/SMOKE-TestCase/ should have been expanded and you can evaluate your output files for this sector.  
 
-6. Navigate in the scripts directory for the point sector and run the onetime script:
+7. Navigate in the scripts directory for the point sector and run the onetime script:
 ```
 cd ../point
 ./Annual_pt_oilgas_onetime_12US1_2017gb_17j_TestCase.csh >& pt_oilgas_onetime_TestCase.log
@@ -65,7 +65,7 @@ Run the daily script:
 Verify the script and programs finished running successfully for the daily script.
 You can evaluate your output files for this sector as well.
 
-7. Run the biogenic sector scripts:
+8. Run the biogenic sector scripts:
 For version 4:
 ```
 cd ../biogenics
@@ -79,6 +79,6 @@ cd ../biogenics
 ./tmpbeis4.2020.csh >& tmpbeis4_TestCase.log
 ```
 
-8. If there are no errors and no differences in the output files for the above sectors your SMOKE setup is working! 
+9. If there are no errors and no differences in the output files for the above sectors your SMOKE setup is working! 
 
 
