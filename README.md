@@ -1,9 +1,10 @@
 # SMOKE-TestCase
 
-The files in this repository serve as a quick test for the SMOKE installation from https://github.com/CEMPD/SMOKE   
+The files in this repository serve as a suite of tests for the SMOKE programs.
+Currently, tests for np_oilgas, pt_oilgas, and biogenic sectors are included.
 
 The structure relies on:
-1. Having successfully installed SMOKE and its prerequisites in your system according to the guide above:
+1. Having successfully installed SMOKE and its prerequisites in your system.
 
 2. Choose and make a test location in your system, i.e.  
 ```
@@ -15,14 +16,15 @@ and get a copy of the SMOKE-TestCase scripts
 ```
 git clone -b main https://github.com/CEMPD/SMOKE-TestCase.git SMOKE-TestCase
 ```
-3. Download the test case input data from here 
-https://drive.google.com/file/d/15QQTs7nILXk613hJlZTGbDeaZLqnaYuP/view?usp=sharing  
+3. Download the Test Case input & output data package from here:   
+https://drive.google.com/file/d/1brhb43RMv5GiYcucRyeYG56GuwVBQ2QV/view?usp=sharing
 
 Place them in your test location and decompress the archive:
 ```
 tar -xvf SMOKE-TestCase-inputs-outputs.tar.gz
 ```
-For testing the biogenic sector download the biogenic package
+For testing the biogenic sector download the biogenic package from here:  
+https://drive.google.com/file/d/11lSuFbFH1Piy5q-Qq5gkgm2Kx57wGpJJ/view?usp=sharing
 
 Place them in your test location and decompress the archive:
 ```
@@ -63,6 +65,20 @@ Run the daily script:
 Verify the script and programs finished running successfully for the daily script.
 You can evaluate your output files for this sector as well.
 
-7. If there are no errors and no differences in the output files for the above sectors your SMOKE setup is working! 
+7. Run the biogenic sector scripts:
+For version 4:
+```
+cd ../biogenics
+./normbeis4.final.csh >& normbeis4_TestCase.log
+./tmpbeis4.2020.csh >& tmpbeis4_TestCase.log
+```
+For version 3:
+```
+cd ../biogenics
+./normbeis3.2016v3.csh >& normbeis4_TestCase.log
+./tmpbeis4.2020.csh >& tmpbeis4_TestCase.log
+```
+
+8. If there are no errors and no differences in the output files for the above sectors your SMOKE setup is working! 
 
 
