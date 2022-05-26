@@ -61,7 +61,7 @@ Users can download the output dataset, found in the same folder and compare agai
 
 ## Biogenic sector
 
-In addition, users can now test the latest version of BEIS4, used to derive emission estimates for the biogenic sector.
+In addition, users can now test the latest version of BEIS4 to derive emission estimates for the biogenic sector.
 
 To run the biogenic sector scripts, download and unzip the biogenic input package from the same directory and navigate to the biogenics folder:
 
