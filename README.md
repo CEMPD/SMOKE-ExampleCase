@@ -3,9 +3,9 @@
 The files in this repository serve as a suite of tests for the SMOKE programs and rely on having successfully installed SMOKE and its prerequisites in your system. Currently, tests for the following sectors are included:
 - np_oilgas  
 - pt_oilgas
-- biogenics sectors are included.
+- biogenics (BEIS4) 
 
-To test SMOKE for their system, users have to follow the next steps:
+To test SMOKE and its components, users have to follow the next steps:
 
 1. Make a test directory in your system where all code and inputs will be placed, i.e.  
 ```
