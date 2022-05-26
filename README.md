@@ -1,12 +1,13 @@
 # SMOKE-TestCase
 
-The files in this repository serve as a suite of tests for the SMOKE programs.
-Currently, tests for np_oilgas, pt_oilgas, and biogenic sectors are included.
+The files in this repository serve as a suite of tests for the SMOKE programs and rely on having successfully installed SMOKE and its prerequisites in your system. Currently, tests for the following sectors are included:
+- np_oilgas  
+- pt_oilgas
+- biogenics sectors are included.
 
-The structure relies on:
-1. Having successfully installed SMOKE and its prerequisites in your system.
+To test SMOKE for their system, users have to follow the next steps:
 
-2. Make a test directory in your system where all code and inputs will be placed, i.e.  
+1. Make a test directory in your system where all code and inputs will be placed, i.e.  
 ```
 cd someplaceinyoursystem/
 mkdir /path_to_your_SMOKE_test_folder/
@@ -16,14 +17,14 @@ and get a copy of the SMOKE-TestCase scripts
 ```
 git clone -b main https://github.com/CEMPD/SMOKE-TestCase.git SMOKE-TestCase
 ```
-3. Download the Test Case input data from here:  
+2. Download the Test Case input data from here:  
 https://drive.google.com/drive/folders/18hiiGSlFQ6gWtXmEdkemBwoyUly1dJEV?usp=sharing
 
-Unzip the archive:
+Unzip the input data archive:
 ```
 tar -xvf SMOKE-TestCase-inputs.tar.gz
 ```
-4. Navigate to the SMOKE-TestCase scripts folder and edit run_settings.txt  
+3. Navigate to the SMOKE-TestCase scripts folder and edit run_settings.txt  
 ```
 cd SMOKE-TestCase/scripts/
 vim run_settings.txt
@@ -36,7 +37,7 @@ MET_ROOT_3D    : Path to the full layered METCRO3D files (same as above, if you 
 SMOKE_LOCATION : Path to the directory with the SMOKE executables  
 IOAPI_LOCATION : Path to the directory I/O API utilities  
 
-5. Go to the scripts directory for the nonpoint sector and run the onetime script:
+4. Go to the scripts directory for the nonpoint sector and run the onetime script:
 ```
 cd nonpoint
 ./Annual_np_oilgas_12US1_2017gb_17j_TestCase.csh >& np_oilgas_TestCase.log
@@ -44,7 +45,7 @@ cd nonpoint
 You should be able to check the log file and and verify that the script and programs finished running successfully.
 The structure within /path_to_your_SMOKE_test_folder/SMOKE-TestCase/ should have expanded and you can see your output files for this sector.  
 
-6. Go to the scripts directory for the point sector and run the onetime script:
+5. Go to the scripts directory for the point sector and run the onetime script:
 ```
 cd ../point
 ./Annual_pt_oilgas_onetime_12US1_2017gb_17j_TestCase.csh >& pt_oilgas_onetime_TestCase.log
