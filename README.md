@@ -27,7 +27,7 @@ tar -xvf SMOKE-TestCase-inputs.tar.gz
 3. Navigate to the SMOKE-TestCase scripts folder and edit run_settings.txt  
 ```
 cd SMOKE-TestCase/scripts/
-vim run_settings.txt
+vim directory_definitions.csh
 ```
 Modify the following paths to point to the correct for your system:
 
