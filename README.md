@@ -7,7 +7,7 @@ The files in this repository serve as a suite of tests for the SMOKE programs an
 
 To test SMOKE and its components, users have to follow the next steps:
 
-1. Make a test directory in your system where all code and inputs will be placed, i.e.  
+1. Make a test directory in your system where all code, inputs, and output will be placed under, i.e.  
 ```
 cd someplaceinyoursystem/
 mkdir /path_to_your_SMOKE_test_folder/
@@ -19,11 +19,17 @@ git clone -b main https://github.com/CEMPD/SMOKE-TestCase.git SMOKE-TestCase
 ```
 2. Download the Test Case input data from here:  
 https://drive.google.com/drive/folders/18hiiGSlFQ6gWtXmEdkemBwoyUly1dJEV?usp=sharing
+*Note that in this directory, both input and output data for QA purposes are provided
 
 Unzip the input data archive:
 ```
 tar -xvf SMOKE-TestCase-inputs.tar.gz
 ```
+Unzip the output dataset needed for QA steps:
+```
+tar -xvf SMOKE-TestCase-output.tar.gz
+```
+
 3. Navigate to the SMOKE-TestCase scripts folder and edit run_settings.txt  
 ```
 cd SMOKE-TestCase/scripts/
@@ -44,6 +50,7 @@ cd nonpoint
 ```
 You should be able to check the log file and and verify that the script and programs finished running successfully.
 The structure within /path_to_your_SMOKE_test_folder/SMOKE-TestCase/ should have expanded and you can see your output files for this sector.  
+At this point, users may want to verify the output against the relevant dataset downloaded for QA purposes in step 2.
 
 5. Go to the scripts directory for the point sector and run the onetime script:
 ```
@@ -56,8 +63,6 @@ Once the onetime step is complete, run the daily script:
 ./Annual_pt_oilgas_daily_12US1_2017gb_17j_TestCase.csh >& pt_oilgas_daily_TestCase.log
 ```
 Verify the script and programs finished running successfully for the daily script.
-
-Users can download the output dataset, found in the same folder and compare against their output for each sector.
 
 ## Biogenic sector
 
@@ -74,5 +79,13 @@ cd ../biogenics
 Users can also download the biogenic-output dataset, found in the same folder and compare against their BEIS4 output.
 
 If there are no errors and no differences in the output files for the above sectors your SMOKE setup is working! 
+
+## Verifying output
+
+Users can use the IOAPI program m3diff to check for differences in the input:
+https://www.cmascenter.org/ioapi/documentation/all_versions/html/M3DIFF.html
+
+
+
 
 
