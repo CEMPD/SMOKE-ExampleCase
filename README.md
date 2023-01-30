@@ -23,6 +23,7 @@ https://drive.google.com/drive/folders/18hiiGSlFQ6gWtXmEdkemBwoyUly1dJEV?usp=sha
 
 Unzip the input data archive:
 ```
+cd ..
 tar -xvf SMOKE-TestCase-inputs.tar.gz
 ```
 Unzip the output dataset needed for QA steps:
