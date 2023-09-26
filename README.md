@@ -39,7 +39,13 @@ vim directory_definitions.csh
 Modify the following paths to point to the correct for your system:
 
 INSTALL_DIR    : Root directory (i.e. someplaceinyoursystem/ under which your keep your SMOKE-TestCase)  
-MET_ROOT       : Full path of MCIP (meteorology) files (in the tarball with inputs above, MCIP output for July 2017 12US1 domain is not included, so for our TestCase downoald 12US1 inputs and link to someplaceinyoursystem/mcip)  
+MET_ROOT       : Full path of MCIP (meteorology) files (in the tarball with inputs above, MCIP output for July 2017 12US1 domain is not included, so for our TestCase downoald 12US1 inputs and link to someplaceinyoursystem/mcip) <br>
+
+Update: 12US1 July 2017 MCIP data is available on the CMAS Data Warehouse on AWS: https://registry.opendata.aws/cmas-data-warehouse/
+
+Browse SMOKE Test Case view readme.html for download instructions: <br>
+https://cmas-smoke-testcase.s3.amazonaws.com/index.html 
+
 MET_ROOT_3D    : Path to the full layered METCRO3D files (same as above, if you are using the TestCase inputs)  
 SMOKE_LOCATION : Path to the directory with the SMOKE executables  
 IOAPI_LOCATION : Path to the directory I/O API utilities  
