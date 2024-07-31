@@ -1,4 +1,4 @@
-# SMOKE-TestCase
+# SMOKE Example Case
 
 The files in this repository serve as a suite of tests for the SMOKE programs and rely on having successfully installed SMOKE and its prerequisites in your system. Currently, tests for the following sectors are included:
 - np_oilgas  
